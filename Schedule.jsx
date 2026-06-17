@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import { getEvents, createEvent, deleteEvent } from '../api/client'
-import { StatCard, SectionLabel, FormGroup, Field, DeleteBtn, AddPanel, PageHeader, EmptyState, Spinner } from '../components/UI'
-import { useToast } from '../hooks/useToast'
+import { getEvents, createEvent, deleteEvent } from './api/client'
+import { StatCard, SectionLabel, FormGroup, Field, DeleteBtn, AddPanel, PageHeader, EmptyState, Spinner } from './components/UI'
+import { useToast } from './hooks/useToast'
 
 const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 const DAYS_FULL = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
