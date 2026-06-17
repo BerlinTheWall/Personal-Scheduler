@@ -1,7 +1,7 @@
 // main.jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Schedule from './Schedule'
+import Schedule from './components/Schedule.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
