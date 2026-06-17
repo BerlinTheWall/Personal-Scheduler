@@ -12,7 +12,12 @@ except ImportError:
     XLSX_SUPPORT = False
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173", "http://localhost:4173", "http://127.0.0.1:5173"])
+# CORS(app, origins=["http://localhost:5173", "http://localhost:4173", "http://127.0.0.1:5173"])
+CORS(app, origins=[
+    "http://localhost:5173",
+    "http://localhost:4173",
+    os.environ.get("FRONTEND_URL", "")
+])
 
 # ── HELPERS ──────────────────────────────────────────────────────────────────
 
