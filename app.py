@@ -18,6 +18,7 @@ CORS(app, origins=[
     "http://localhost:4173",
     os.environ.get("FRONTEND_URL", "")
 ])
+
 init_db()
 # ── HELPERS ──────────────────────────────────────────────────────────────────
 
