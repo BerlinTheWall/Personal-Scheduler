@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: '/api' })
+// const api = axios.create({ baseURL: '/api' })
+const api = axios.create({ baseURL: 'http://localhost:8000/api' })
 
 const unwrap = (promise) => promise.then(r => r.data.data)
 
